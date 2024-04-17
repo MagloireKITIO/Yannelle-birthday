@@ -275,7 +275,7 @@ const animationTimeline = () => {
     tl.restart();
   });
 };
-
+window.onbeforeunload = function() { document.getElementById("myAudio").pause(); };
 // Import the data to customize and insert them into page
 const fetchData = () => {
   fetch("customize.json")
