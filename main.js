@@ -19,6 +19,10 @@ const animationTimeline = () => {
     skewX: "15deg"
   };
 
+  const audioElement = document.querySelector('audio');
+   // Démarrer la lecture automatiquement
+   audioElement.play();  
+
   const ideaTextTransLeave = {
     opacity: 0,
     y: 20,
